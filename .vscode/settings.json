@@ -1,0 +1,7 @@
+{
+  "editor.wordWrap": "on",
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.autoClosingQuotes": "always",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true
+}
