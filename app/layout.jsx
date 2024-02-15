@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css'
 import '@radix-ui/themes/styles.css'
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang='en'>
             <body className={inter.className}>
+            <Analytics />
                 <header>
                     <nav className='bg-slate-200 p-4'>
                         <ul>
@@ -27,6 +29,7 @@ export default function RootLayout({ children }) {
                 </header>
                 <main className='bg-zinc-300'>
                     <Theme>{children}</Theme>
+                    
                 </main>
                 <footer className='bg-sky-100 p-4'>Footer</footer>
             </body>
