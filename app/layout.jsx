@@ -1,10 +1,10 @@
 import { Inter } from 'next/font/google'
-import Link from 'next/link'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import '@radix-ui/themes/styles.css'
 
-import Header from './components/layout/header'
+import Header from '@/comps/layout/header'
+import Footer from '@/comps/layout/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
                     <main className='bg-zinc-300'>
                         <Theme>{children}</Theme>
                     </main>
-                    <footer className='bg-sky-100 p-4'>Footer</footer>
+                    <Footer />
                 </div>
             </body>
         </html>
